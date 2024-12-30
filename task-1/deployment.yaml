@@ -15,7 +15,7 @@ spec:
       containers:
       - image: alpine
         name: cm-container
-        command: ['sh', '-c', 'while true; do echo $NAME; sleep 1; done']
+        command: ['sh', '-c', 'while true; do echo $NAME; sleep 5; done']
         env:
         - name: NAME
           valueFrom:
